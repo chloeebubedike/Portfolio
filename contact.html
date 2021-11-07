@@ -1,43 +1,65 @@
 <!DOCTYPE html>
-<head>
-    <title>Chloe Ebubedike | Portfolio | Contact me </title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New&display=swap" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
-<main>
-    <h1> Contact me </h1>
-    <h4>Please feel free to get into contact me by filling out your details and leaving me a message below!</h4>
+<html>
+    <head>
+        <title>Chloe Ebubedike | Contact </title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <main>
+            <h1><u> Get in contact </u></h1>
+            <h5>Please feel free to get into contact with me by filling out your details and leaving me a message below!</h5>
 
-    <nav class="sidenav" style="background-color: black;">
-        <a href="/index.html"> Home </a>
-        <br>
-        <a href="#"> Portfolio </a>
-        <br>
-        <a href="#"> Interests </a>
-        <br>
-        <a href="#"> Contact me </a>
-        
-        
-    </nav>
-    <form >
-        <label for="recruiter"> 
-            <input id="recruiter" type="radio" name="contact-reason"> Recruiter
-        </label>
-        <label for="work-in-tech">
-            <input id="work-in-tech" type="radio" name="contact-reason"> Work/ interested in working in the tech industry
-        </label>
-        <label for="other">
-            <input id="other" type="radio" name="contact-reason"> Other
-        </label>
-        
-        
-        <input placeholder="Enter your name here" required> Name </input>
-        <input placeholder="Enter your email here" required> Email</input>
-        <input placeholder="Leave me a message!" required> Message </input>
-        <button type="submit"> submit</button>
-    </form>
+            <nav class="sidenav" style="background-color: black;">
+                <a href="/index.html"> Home </a>
+                <br>
+                <a href="/portfolio.html"> Portfolio </a>
+                <br>
+                <a href="/about.html"> Skills </a>
+                <br>
+                <a href="/contact.html"> Contact me </a>
+                
+                
+            </nav>
+            <h6 class="github"> <button>View my Github repo</button></h6>
+            <form >
+                
+                    <div class="radio">
+                        <label class="small-text" for="recruiter"> I am a recruiter </label>
+                        <input id="recruiter" type="radio" name="contact-reason" value="recruiter"> 
+                    </div>
 
-</main>
+                    <div class="radio">
+                    <label class="small-text" for="work-in-tech"> I work/ am interested in working in tech </label>
+                        <input id="work-in-tech" type="radio" name="contact-reason" value="work-in-tech"> 
+                    </div>
+                    <div class="radio">
+                    <label class="small-text" for="other"> Other </label>
+                        <input id="other" type="radio" name="contact-reason" value="other"> 
+                    </div>
+                
+
+                <div id="contact-fields">
+                    <label for="contact-fields"> Name </label>
+                    <input id="contact-fields" placeholder="Enter your name here" required> </input>
+                    <labe for="contact-fields"> Email - include validation</label>
+                    <input  id="contact-fields" placeholder="Enter your email here" required> </input>
+                    <label for="contact-fields"> Message</label>
+                    <input  id="contact-fields" placeholder="Leave me a message!" required> </input>
+                    <button id="contact-fields" type="submit"> submit</button>
+                </div>
+            </form>
+
+            <h4>Contact Links</h4>
+            <ul>
+                <li> Github</li>
+                <li> Linkedin</li>
+                <li> CodeWars</li>
+            </ul>
+
+        </main>
+    </body>
+</html>
