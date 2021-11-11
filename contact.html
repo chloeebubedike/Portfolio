@@ -27,19 +27,21 @@
             <h6 class="github"> <button>View my Github repo</button></h6>
             <form >
                 
-                    <div class="radio">
+                    <fieldset class="radio">
+                    <legend> Reason for contact</legend>
                         <label class="small-text" for="recruiter"> I am a recruiter </label>
-                        <input id="recruiter" type="radio" name="contact-reason" value="recruiter"> 
-                    </div>
+                        <input id="recruiter" type="radio" name="contact-reason" value="recruiter" tabindex="1"> 
+                        <br>
+                    
 
-                    <div class="radio">
+                    
                     <label class="small-text" for="work-in-tech"> I work/ am interested in working in tech </label>
-                        <input id="work-in-tech" type="radio" name="contact-reason" value="work-in-tech"> 
-                    </div>
-                    <div class="radio">
+                        <input id="work-in-tech" type="radio" name="contact-reason" value="work-in-tech" tabindex="1"> 
+                        <br>
+                    
                     <label class="small-text" for="other"> Other </label>
-                        <input id="other" type="radio" name="contact-reason" value="other"> 
-                    </div>
+                        <input id="other" type="radio" name="contact-reason" value="other" tabindex="1"> 
+                    </fieldset>
                 
 
                 <div id="contact-fields">
@@ -49,7 +51,7 @@
                     <input  id="contact-fields" placeholder="Enter your email here" required> </input>
                     <label for="contact-fields"> Message</label>
                     <input  id="contact-fields" placeholder="Leave me a message!" required> </input>
-                    <button id="contact-fields" type="submit"> submit</button>
+                    <button id="contact-fields" type="submit" tabindex="2"> submit</button>
                 </div>
             </form>
 
@@ -61,5 +63,10 @@
             </ul>
 
         </main>
+
+        <footer>
+            Website made by Chloe Ebubedike
+    
+        </footer>
     </body>
 </html>

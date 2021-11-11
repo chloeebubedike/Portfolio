@@ -53,12 +53,13 @@ main .intro{
 
 main .CTA{
     width:100%;
-    padding: 0px 20px 10px;
+    padding: 10px 20px 10px 10px;
     line-height: 1;
     font-size: 14px;
     font-style: italic;
     text-transform: lowercase;
-    display:block;
+    display: relative;
+    margin: 50px 0px 0px 0px;
     
 }
 
@@ -74,9 +75,14 @@ main .CTA{
     height: 250px;
     padding-bottom: 0px;
     margin-bottom: 0px;
-    display: block;
+    /*display: block;*/
     text-transform: lowercase;
     text-align: left;
+    position: relative;
+    display:flex;
+    flex-direction: column;
+    height: 500px;
+
 
 }
 
@@ -103,6 +109,14 @@ a:link{
 
 a:hover{
     color: white;
+    animation-name: nav;
+    animation-duration: 500ms;
+}
+
+@keyframes nav{
+    100%{
+        width: 40px;
+    }
 }
 
 #contact-fields{
@@ -123,6 +137,8 @@ a:hover{
     border-color: pink;
     border-width:5px;
     border-style: solid;
+    max-width: 100%;
+    height: auto;
 }
 
 #contact-fields{
@@ -145,6 +161,27 @@ img{
     margin: auto;
 }
 
+footer{ 
+    margin-left: 200px;
+    width: 600px;
+    padding: 30px;
+    font-size: 10px;
+    opacity: 0.5;
+
+}
+
+/*.home-info{
+    display: flex;
+    flex-direction: column;
+
+}*/
+
+
+hr{
+    border-top: 1px solid pink;
+
+
+}
 @media only screen and (min-width: 810px) {
     .sidenav {
         /*Video CSS*/
@@ -190,8 +227,14 @@ img{
         
     }
 
+    footer{
+        margin-left: 0px;
+    }
+
 
 }
+
+
 
 @media only screen and (min-width: 1000px) {
     main{
@@ -224,5 +267,14 @@ img{
 
     .intro{
         height: 150px;
+    }
+
+    footer{ 
+        margin-left: 200px !important;
+        width: 600px;
+        padding: 30px;
+        font-size: 10px;
+        opacity: 0.5;
+    
     }
 }
