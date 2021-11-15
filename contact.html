@@ -9,10 +9,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
-        <main>
-            <h1><u> Get in contact </u></h1>
-            <h5>Please feel free to get into contact with me by filling out your details and leaving me a message below!</h5>
-
+        <main class="contact-main">
+            <div class="contact-title">
+                <h1><u> Get in contact </u></h1>
+                <h5>Please feel free to get into contact with me by filling out your details and leaving me a message below!</h5>
+             </div>
             <nav class="sidenav" style="background-color: black;">
                 <a href="/index.html"> Home </a>
                 <br>
@@ -28,30 +29,41 @@
             <form >
                 
                     <fieldset class="radio">
-                    <legend> Reason for contact</legend>
-                        <label class="small-text" for="recruiter"> I am a recruiter </label>
-                        <input id="recruiter" type="radio" name="contact-reason" value="recruiter" tabindex="1"> 
-                        <br>
-                    
+                        
+                            <legend> Reason for contact</legend>
+                            <div class="contact-reason">
+                                <div class="contact-radio">
+                                    <label class="small-text" for="recruiter"> I am a recruiter </label>
+                                    <input id="recruiter" type="radio" name="contact-reason" value="recruiter" tabindex="1"> 
+                                    <br>
+                                </div>
+                            
 
-                    
-                    <label class="small-text" for="work-in-tech"> I work/ am interested in working in tech </label>
-                        <input id="work-in-tech" type="radio" name="contact-reason" value="work-in-tech" tabindex="1"> 
-                        <br>
-                    
-                    <label class="small-text" for="other"> Other </label>
-                        <input id="other" type="radio" name="contact-reason" value="other" tabindex="1"> 
+                            
+                            <div class="contact-radio">
+                                <label class="small-text" for="work-in-tech"> I work/ am interested in working in tech </label>
+                                <input id="work-in-tech" type="radio" name="contact-reason" value="work-in-tech" tabindex="1"> 
+                                <br>
+                            </div>
+                            
+                            <div class="contact-radio">
+                                <label class="small-text" for="other"> Other </label>
+                                    <input id="other" type="radio" name="contact-reason" value="other" tabindex="1"> 
+                            </div>
+                        </div>
                     </fieldset>
                 
 
                 <div id="contact-fields">
-                    <label for="contact-fields"> Name </label>
-                    <input id="contact-fields" placeholder="Enter your name here" required> </input>
-                    <labe for="contact-fields"> Email - include validation</label>
-                    <input  id="contact-fields" placeholder="Enter your email here" required> </input>
-                    <label for="contact-fields"> Message</label>
-                    <input  id="contact-fields" placeholder="Leave me a message!" required> </input>
-                    <button id="contact-fields" type="submit" tabindex="2"> submit</button>
+                    <div class="contact-message">
+                        <label for="contact-fields"> Name </label>
+                        <input id="contact-fields contact-name" placeholder="Enter your name here" required stle="width: 100px;"> </input>
+                        <label for="contact-fields"> Email - include validation</label>
+                        <input  id="contact-fields" placeholder="Enter your email here" required> </input>
+                        <label for="contact-fields"> Message</label>
+                        <input  id="contact-fields" placeholder="Leave me a message!" required> </input>
+                        <button id="contact-fields" type="submit" tabindex="2"> submit</button>
+                    </div>
                 </div>
             </form>
 

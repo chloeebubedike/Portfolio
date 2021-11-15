@@ -59,7 +59,10 @@ main .CTA{
     font-style: italic;
     text-transform: lowercase;
     display: relative;
-    margin: 50px 0px 0px 0px;
+    margin: 10px 0px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
     
 }
 
@@ -67,6 +70,8 @@ main .CTA{
     opacity:0.7;
     line-height: 25px;
 }
+
+
 
 .intro{
     font-size: 1em;
@@ -81,6 +86,7 @@ main .CTA{
     position: relative;
     display:flex;
     flex-direction: column;
+    justify-content: center;
     height: 500px;
 
 
@@ -182,6 +188,46 @@ hr{
 
 
 }
+
+/*CSS for contact page*/
+
+.contact-title{
+    display: flex;
+    flex-direction: column;
+    
+
+}
+
+.contact-reason{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.contact-radio{
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.contact-message{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+#contact-name{
+    flex-shrink: 1;
+}
+
+.container-skills{
+    display: grid;
+    grid-template-columns:150px 150px 150px 150px;
+    grid-template-rows: 150px 150px 150px 150px;
+    grid-gap: 20px;
+   
+}
+
 @media only screen and (min-width: 810px) {
     .sidenav {
         /*Video CSS*/
