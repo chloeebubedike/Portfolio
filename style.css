@@ -98,6 +98,7 @@ main .CTA{
     color: black;
     padding: 5px 10px 5px 10px;
     width: 280px;
+    border-radius: 5px;
 }
 
 .button1:hover{
