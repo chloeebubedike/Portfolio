@@ -291,9 +291,7 @@ hr{
         
     }
 
-    footer{
-        float: left;
-    }
+    
 
 
 }
@@ -337,6 +335,10 @@ hr{
         margin-left: 230px;
         width: 100%;
         padding: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: flex-start;
         
         
     
@@ -347,6 +349,7 @@ hr{
         opacity: 0.5;
         display: block;
         margin: 0;
+        padding: 15px;
 
     }
 
@@ -364,7 +367,7 @@ hr{
 
     
     .fa{
-        padding: 15px;
+        padding: 5px;
         font-size: 20px;
         width: 20px;
         text-align: center;
@@ -378,7 +381,7 @@ hr{
     }
     
     .fa:hover{
-        padding: 15px;
+        padding: 5px;
         margin: 0px;
         height: 20.15px;
         width: 20px !important;
