@@ -108,7 +108,7 @@ main .CTA{
 
 .button1:hover{
     text-decoration: none;
-    background-color: pink;
+    background-color: darkorchid;
     color: white;
     padding: 5px 10px 5px 10px !important;
     width: 280px !important;
@@ -239,15 +239,28 @@ hr{
     flex-shrink: 1;
 }
 
-.container-skills{
+.container-skills-one{
     display: grid;
-    grid-template-columns:repeat( auto-fit, minmax(150px, 300px));
-    grid-template-rows: repeat(4, 150px);
+    grid-template-columns:repeat( 4, 220px);
+    /*grid-template-columns:repeat( auto-fit, minmax(50px, 300px));*/
+    grid-template-rows: repeat(1, 150px);
     grid-gap: 20px;
     justify-items: center;
     align-items: center;
    
 }
+
+.container-skills-two{
+    display: grid;
+    /*grid-template-columns:repeat( 1, 150px);*/
+    grid-template-columns:repeat( 2, minmax(200px, 600px));
+    grid-template-rows: repeat(1, 200px);
+    grid-gap: 20px;
+    justify-items: center;
+    align-items: center;
+
+}
+
 
 
 
