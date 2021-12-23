@@ -12,8 +12,8 @@
     <body>
         <main class="contact-main">
             <div class="contact-title">
-                <h1><u> Get in contact </u></h1>
-                <h5>Please feel free to get into contact with me by filling out your details and leaving me a message below!</h5>
+                <h1 id="title"><u> Get in contact </u></h1>
+                <h5 id="description">Please feel free to get into contact with me by filling out your details and leaving me a message below!</h5>
              </div>
             <nav class="sidenav" style="background-color: black;">
                 <a href="/index.html"> Home </a>
@@ -59,10 +59,10 @@
                     <div class="contact-message">
                         <label for="contact-fields"> Name </label>
                         <input id="contact-fields contact-name" placeholder="Enter your name here" required stle="width: 100px;"> </input>
-                        <label for="contact-fields"> Email - include validation</label>
-                        <input  id="contact-fields" placeholder="Enter your email here" required> </input>
+                        <label for="contact-fields"> Email </label>
+                        <input  id="contact-fields" type= "email" placeholder="Enter your email here" required> </input>
                         <label for="contact-fields"> Message</label>
-                        <input  id="contact-fields" placeholder="Leave me a message!" required> </input>
+                        <textarea id="contact-fields" name= "contact-fields" rows="4" cols="50" placeholder="Leave me a message!"></textarea>
                         <button id="contact-fields" type="submit" tabindex="2"> submit</button>
                     </div>
                 </div>
